@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html<head><html lang="de">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="viewport" content="width=device-width, initial-scale=1.0"><html lang="de">
 <title>Isabell Unterdörfer – Heilberaterin</title>
 
 <style>
@@ -14,12 +12,21 @@ body {
     color: #333;
 }
 
-/* HEADER */
+/* HEADER with photo */
 header {
     background-color: #6aa89a;
     color: white;
     text-align: center;
     padding: 2rem;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid white;
 }
 
 /* SECTIONS */
@@ -29,12 +36,7 @@ section {
     padding: 1rem;
 }
 
-/* HEADINGS */
-h1, h2 {
-    margin-bottom: 0.5rem;
-}
-
-/* BOX STYLE */
+/* CARDS */
 .card {
     background: white;
     border-radius: 10px;
@@ -43,32 +45,23 @@ h1, h2 {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-/* LIST */
+/* TEXT */
 ul {
     padding-left: 20px;
 }
 
-/* FOOTER */
+/* Testimonials */
+.testimonial {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
 footer {
     background-color: #6aa89a;
     color: white;
     text-align: center;
     padding: 1rem;
-}
-
-/* BUTTON */
-.button {
-    display: inline-block;
-    background: #6aa89a;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-.button:hover {
-    background: #4f8579;
 }
 
 </style>
@@ -77,6 +70,9 @@ footer {
 <body>
 
 <header>
+    <!-- ✅ PHOTO -->
+    <img src="your-photo.jpg" alt="Porträt Isabell Unterdörfer">
+
     <h1>Isabell Unterdörfer</h1>
     <p>Heilberaterin mit langjähriger Berufserfahrung</p>
 </header>
@@ -86,27 +82,59 @@ footer {
     <div class="card">
         <h2>Über mich</h2>
         <p>
-        Ich bin Heilberaterin mit langjähriger Erfahrung in der ganzheitlichen Begleitung von Menschen. 
-        In meiner Arbeit verbinde ich fachliches Wissen mit Empathie und einem achtsamen Blick auf die individuellen Bedürfnisse meiner Klientinnen und Klienten.
-        Mein Ziel ist es, Menschen dabei zu unterstützen, ihre Gesundheit zu stärken und innere Balance zu finden.
+        Ich bin Heilberaterin mit langjähriger Erfahrung in der ganzheitlichen Begleitung von Menschen.
+        Meine Arbeit verbindet fachliche Kompetenz mit Empathie und einem tiefen Verständnis für individuelle Lebenssituationen.
+        </p>
+
+        <p>
+        Als Person mit eigenen Hör- und Seheinschränkungen kenne ich die Herausforderungen des Alltags aus erster Hand.
+        Diese Erfahrungen prägen meine Arbeit und motivieren mich besonders, Menschen einfühlsam und individuell zu begleiten.
+        Mein Ziel ist es, gemeinsam Wege zu mehr Lebensqualität, Selbstbestimmung und innerer Balance zu finden.
         </p>
     </div>
 
     <div class="card">
         <h2>Berufserfahrung</h2>
         <ul>
-            <li><strong>Selbstständige Heilberaterin</strong> – Individuelle Beratung und Begleitung</li>
-            <li><strong>Praxis / Einrichtung</strong> – Unterstützung im therapeutischen Bereich</li>
-            <li><strong>Weitere Station</strong> – Beschreibung Ihrer Tätigkeit</li>
+            <li>
+                <strong>Seit 20XX – Selbstständige Heilberaterin</strong><br>
+                Eigene Beratungspraxis<br>
+                - Individuelle Gesundheitsberatung<br>
+                - Begleitung von Klientinnen und Klienten in herausfordernden Lebenssituationen<br>
+                - Entwicklung ganzheitlicher Lösungsansätze<br>
+            </li>
+
+            <br>
+
+            <li>
+                <strong>20XX – 20XX Praxis / Einrichtung XY</strong><br>
+                - Unterstützung im therapeutischen Alltag<br>
+                - Betreuung und Begleitung von Patientinnen und Patienten<br>
+                - Dokumentation und organisatorische Aufgaben<br>
+            </li>
+
+            <br>
+
+            <li>
+                <strong>20XX – 20XX Weitere berufliche Station</strong><br>
+                - Beratung und Kommunikation mit Klientinnen und Klienten<br>
+                - Unterstützung bei gesundheitsbezogenen Maßnahmen<br>
+            </li>
         </ul>
     </div>
 
     <div class="card">
         <h2>Praktika</h2>
         <ul>
-            <li>Praktikum in einer naturheilkundlichen Praxis</li>
-            <li>Praktikum in einem Gesundheitszentrum</li>
-            <li>Weitere praktische Erfahrungen</li>
+            <li>
+                <strong>Praktikum Naturheilpraxis (20XX)</strong><br>
+                Einblicke in alternative Heilmethoden und Patientenbetreuung
+            </li>
+
+            <li>
+                <strong>Praktikum Gesundheitszentrum (20XX)</strong><br>
+                Unterstützung im organisatorischen und beratenden Bereich
+            </li>
         </ul>
     </div>
 
@@ -114,26 +142,47 @@ footer {
         <h2>Schwerpunkte</h2>
         <ul>
             <li>Ganzheitliche Gesundheitsberatung</li>
-            <li>Prävention und Wohlbefinden</li>
             <li>Individuelle Begleitung</li>
-            <li>Stärkung von Körper und Geist</li>
+            <li>Prävention und Wohlbefinden</li>
+            <li>Unterstützung bei persönlichen Herausforderungen</li>
         </ul>
     </div>
 
     <div class="card">
         <h2>Persönliches Engagement & Interessen</h2>
         <p>
-        In meiner Freizeit spiele ich Konzertgitarre und finde im Improvisationstheater einen kreativen Ausgleich. 
-        Zudem engagiere ich mich aktiv in lokalen Taub-Blind-Gruppen und kenne die Gemeinschaft sowie ihre besonderen Bedürfnisse sehr gut. 
-        Diese Erfahrungen prägen meine Arbeit und fördern mein Verständnis für unterschiedliche Lebensrealitäten und Kommunikationsformen.
+        In meiner Freizeit spiele ich Konzertgitarre und bin im Improvisationstheater aktiv.
+        Beides fördert meine Kreativität, Ausdrucksfähigkeit und Präsenz im zwischenmenschlichen Kontakt.
         </p>
+
+        <p>
+        Darüber hinaus engagiere ich mich aktiv in lokalen Taub-Blind-Gruppen.
+        Durch meine enge Verbindung zur Gemeinschaft kenne ich deren Bedürfnisse und Herausforderungen sehr gut,
+        was meine berufliche Arbeit nachhaltig bereichert.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Stimmen von Klientinnen und Klienten</h2>
+
+        <p class="testimonial">
+        „Die Beratung war sehr einfühlsam und hat mir neue Perspektiven eröffnet.“
+        </p>
+
+        <p class="testimonial">
+        „Ich habe mich verstanden und sehr gut begleitet gefühlt.“
+        </p>
+
+        <p class="testimonial">
+        „Besonders beeindruckt hat mich die Kombination aus Fachwissen und persönlichem Verständnis.“
+        </p>
+
     </div>
 
     <div class="card">
         <h2>Kontakt</h2>
         <p>Email: your-email@example.com</p>
         <p>Telefon: +49 xxx xxxxxx</p>
-        <a class="button" href="mailto:your-email@example.com">Kontakt aufnehmen</a>
     </div>
 
 </section>
@@ -144,3 +193,5 @@ footer {
 
 </body>
 </html>
+<head>
+<meta charset="UTF-8">
